@@ -1,0 +1,303 @@
+.btn {
+  border: none;
+  width: 100%;
+}
+
+.try-button {
+  background-color: #5E54A4;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.4rem rgba(61, 59, 72, 0.2);
+}
+@media screen and (min-width: 80rem) {
+  .try-button {
+    padding: 1.25rem 2rem;
+  }
+}
+
+.claim-button {
+  background-color: #38CC8B;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  margin: 0;
+  box-shadow: inset 0 -0.3rem rgba(61, 59, 72, 0.2);
+}
+.claim-button:hover {
+  background-color: #77E2B3;
+}
+
+.form {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem rgba(61, 59, 72, 0.2);
+}
+@media screen and (min-width: 80rem) {
+  .form {
+    padding: 2.5rem;
+  }
+}
+
+input:focus {
+  border: #DEDEDE solid 0.063rem;
+}
+
+.form-group input {
+  border: #DEDEDE solid 0.063rem;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1rem;
+  width: 100%;
+}
+@media screen and (min-width: 80rem) {
+  .form-group input {
+    padding: 1.25rem 2rem;
+  }
+}
+.form-group input:focus {
+  border: #5E54A4 solid 0.063rem;
+  outline: none;
+}
+.form-group input:focus::-moz-placeholder {
+  color: transparent;
+}
+.form-group input:focus::placeholder {
+  color: transparent;
+}
+
+.invisible {
+  display: none;
+}
+
+.error-form {
+  background-image: url(../images/icon-error.svg);
+  background-position: 95% center;
+  border: 0.125rem solid #FF7979 !important;
+  background-size: 1.25rem 1.25rem;
+  background-repeat: no-repeat;
+  color: transparent;
+  outline: none;
+}
+
+.content-header {
+  color: #FFFFFF;
+  text-align: center;
+}
+.content-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0.018rem;
+}
+@media screen and (min-width: 80rem) {
+  .content-header h1 {
+    font-size: 3.125rem;
+    line-height: 3.438rem;
+    letter-spacing: -0.033rem;
+  }
+}
+.content-header p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.try-button {
+  color: #FFFFFF;
+  line-height: 1.625rem;
+  font-size: 0.938rem;
+}
+.try-button span {
+  font-weight: 600;
+}
+.try-button p {
+  font-weight: 300;
+  line-height: 1.625rem;
+}
+
+.form-group input {
+  color: #3D3B48;
+  font-size: 0.875rem;
+  letter-spacing: 0.016rem;
+  font-weight: 600;
+}
+
+.error-message {
+  font-style: italic;
+  font-size: 0.688rem;
+  color: #FF7979;
+  text-align: right;
+}
+
+.claim-button {
+  color: #FFFFFF;
+  font-size: 0.938rem;
+  text-transform: uppercase;
+  letter-spacing: 0.063rem;
+  font-weight: 600;
+}
+
+.form-footer {
+  font-size: 0.688rem;
+  color: #BAB7D4;
+  text-align: center;
+  line-height: 1.313rem;
+}
+.form-footer span {
+  color: #FF7979;
+  font-weight: 600;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #FF7979;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 80rem) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 0 1.5rem 4.25rem 1.5rem;
+}
+@media screen and (min-width: 80rem) {
+  .grid {
+    height: 100vh;
+    margin: 0 9.375rem;
+  }
+}
+
+.grid__content {
+  margin-top: 5.5rem;
+}
+@media screen and (min-width: 80rem) {
+  .grid__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    gap: 4.5rem;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+
+.content-header {
+  padding-bottom: 4.375rem;
+}
+@media screen and (min-width: 80rem) {
+  .content-header {
+    text-align: left;
+    padding-top: 5rem;
+  }
+}
+.content-header h1 {
+  padding: 0 2rem 1rem 2rem;
+}
+@media screen and (min-width: 80rem) {
+  .content-header h1 {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .content-header p {
+    padding-left: 2rem;
+  }
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  padding-top: 0.5rem;
+}
+
+.form-footer {
+  padding: 0 1.3rem;
+}/*# sourceMappingURL=style.css.map */

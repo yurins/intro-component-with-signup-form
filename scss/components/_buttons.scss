@@ -1,0 +1,30 @@
+@use '../utility/_index' as utility;
+
+.btn {
+    border: none;
+    width: 100%;
+}
+
+.try-button {
+    background-color: utility.$try-button;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 .4rem utility.$claim-button-shadow;
+    @include utility.desktop {
+        padding: 1.25rem 2rem;
+    }
+}
+
+.claim-button {
+    background-color: utility.$claim-button;
+    padding: 1.25rem;
+    border-radius: .5rem;
+    margin: 0;
+    box-shadow: inset 0 -.3rem utility.$claim-button-shadow;
+    
+
+    &:hover {
+        background-color: utility.$lighter-green;
+    }
+}

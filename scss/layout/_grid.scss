@@ -1,0 +1,56 @@
+@use '../utility/index' as utility;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 1.5rem 4.25rem 1.5rem;
+    @include utility.desktop {
+        height: 100vh;
+        margin: 0 9.375rem;
+    }
+}
+
+.grid__content {
+    margin-top: 5.5rem;
+    @include utility.desktop {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        gap: 4.5rem;
+        align-items: center;
+        margin-top: 0;
+    }
+}
+
+.content-header {
+    padding-bottom: 4.375rem;
+    @include utility.desktop {
+        text-align: left;
+        padding-top: 5rem;
+    }
+    h1 {
+        padding: 0 2rem 1rem 2rem; 
+        @include utility.desktop {
+            padding: 0 2rem 2rem 2rem;
+        }
+    }
+    
+    p {
+    @include utility.desktop {
+        padding-left: 2rem;
+      }
+    }
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    padding-top: .5rem;
+}
+
+.form-footer {
+    padding: 0 1.3rem;
+}
+  

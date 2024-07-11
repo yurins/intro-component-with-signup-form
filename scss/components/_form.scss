@@ -1,0 +1,51 @@
+@use '../utility/_index' as utility;
+
+.form {
+    background-color: utility.$white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 .4rem utility.$claim-button-shadow;
+    @include utility.desktop {
+        padding: 2.5rem;
+    }
+}
+
+input:focus {
+    border: utility.$form-border solid 0.063rem;
+}
+
+.form-group {
+    input {
+        border: utility.$form-border solid 0.063rem;
+        border-radius: .5rem;
+        padding: 1.25rem 1rem;
+        width: 100%;
+        @include utility.desktop {
+            padding: 1.25rem 2rem;
+        }
+
+        &:focus {
+            border: utility.$try-button solid 0.063rem;
+            outline: none;
+        }
+    }
+
+    input:focus::placeholder {
+        color: transparent;
+    }
+}
+
+.invisible {
+    display: none;
+}
+
+.error-form {
+    background-image: url(../images/icon-error.svg);
+    background-position: 95% center;
+    border: 0.125rem solid utility.$background-color !important;
+    background-size: 1.25rem 1.25rem; 
+    background-repeat: no-repeat; 
+    color: transparent;
+    outline: none;
+}
+
