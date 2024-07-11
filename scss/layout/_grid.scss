@@ -52,5 +52,8 @@
 
 .form-footer {
     padding: 0 1.3rem;
+    @include utility.desktop {
+        padding: 0;
+    }
 }
   
